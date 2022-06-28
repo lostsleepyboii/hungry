@@ -1,0 +1,119 @@
+.intro {
+  min-height: 100vh;
+  display: flex;
+  background-color: $black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__inner {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 0.26fr 1fr 0.26fr;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__social {
+    display: grid;
+    gap: 1.33rem;
+  }
+
+  &__text {
+    color: $white;
+    font-size: $font-s;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.5em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    color: $white;
+    font-family: 'Banny', sans-serif;
+    font-size: $font-title;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__date {
+    align-self: flex-start;
+    color: $white;
+    font-size: $font-s;
+    font-weight: 700;
+    writing-mode: tb-rl;
+    transform: rotate(180deg);
+  }
+
+  &__buttons {
+    margin-top: 0.77rem;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2.66rem;
+  }
+}
+
+// LAZY LOAD BANNERS
+.no-webp .intro {
+  &.lazy-bg-loaded {
+    background-image: url('../images/header-bg.jpg');
+  }
+}
+
+.webp .intro {
+  &.lazy-bg-loaded {
+    background-image: url('../images/header-bg.webp');
+  }
+}
+
+// Media 
+@include l-tablet {
+  .intro {
+    &__title {
+      font-size: $font-title2;
+    }
+  }
+}
+
+@include sm-tablet {
+  .intro {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+
+    &__block {
+      width: 100%;
+
+      &--date {
+        display: none;
+      }
+
+      &--social {
+        display: none;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .intro {
+    &__title {
+      font-size: $font-title3;
+    }
+
+    &__buttons {
+      width: 100%;
+      grid-auto-flow: row;
+      gap: 1rem;
+    }
+  }
+}

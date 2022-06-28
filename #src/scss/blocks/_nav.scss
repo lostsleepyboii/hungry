@@ -1,0 +1,175 @@
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  &__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba($white, 0.2);
+  }
+
+  &__item {
+    max-width: 133px;
+    width: 100%;
+    height: 100px;
+
+    transition: $hover;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: $white;
+    font-weight: 700;
+    font-size: $font-s;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+
+    transition: $hover;
+
+    &:hover {
+      color: $primary;
+      background-color: rgba($white, 0.2);
+    }
+  }
+
+  &__social {
+    display: none;
+  }
+}
+
+// Media
+@include l-tablet {
+  body.lock {
+    overflow: hidden;
+  }
+
+  .nav {
+    padding: 5rem 0 1rem 0;
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -1;
+
+    opacity: 0;
+    visibility: hidden;
+    overflow: auto;
+
+    background-color: $gray;
+
+    transition: $hover;
+
+    &.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &__list {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__item {
+      max-width: 100%;
+    }
+
+    &__link {
+      padding: 1.5rem;
+      font-size: $font-m;
+    }
+
+    &__social {
+      display: none;
+    }
+  }
+
+  .burger {
+    display: block;
+
+    position: relative;
+    width: 30px;
+    height: 20px;
+
+    cursor: pointer;
+  }
+
+  .burger span {
+    position: absolute;
+    left: 0;
+    top: 9px;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: $white;
+    transition: all 0.2s ease;
+  }
+
+  .burger::before,
+  .burger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: $white;
+    transition: all 0.2s ease;
+  }
+
+  .burger::before {
+    top: 0;
+  }
+
+  .burger::after {
+    bottom: 0;
+  }
+
+  .burger.show span {
+    transform: scale(0);
+  }
+
+  .burger.show::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .burger.show::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+}
+
+@include sm-tablet {
+  .nav {
+    &__social {
+      position: absolute;
+      bottom: 3rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+  }
+}
+
+@include mobile {
+  .nav {
+    &__social {
+      bottom: 1rem;
+    }
+  }
+}

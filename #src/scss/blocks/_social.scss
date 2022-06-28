@@ -1,0 +1,22 @@
+.social {
+  &__link {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: $white;
+    font-size: $i-m;
+    border: 1px solid rgba($white, 0.2);
+    border-radius: 100%;
+    
+    transition: $hover;
+    
+    &:hover {
+      color: $primary;
+      background-color: $white;
+    }
+  }
+}

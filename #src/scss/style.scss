@@ -1,0 +1,42 @@
+/*	Imports	*/
+@import "_vars";
+@import "_mixins";
+@import "_fonts";
+
+/* Vendors */
+@import "vendor/_reset";
+
+html {
+	font-size: 15px;
+}
+
+body {
+	margin: 0;
+	font-family: 'OpenSans', sans-serif;
+	font-size: $font-s;
+	background-color: $white;
+	color: $black;
+}
+
+/*	Common	*/
+@import "common/_sprite";
+@import "common/_container";
+
+/*	Blocks	*/
+@import "blocks/_btn";
+@import "blocks/_header";
+@import "blocks/_nav";
+@import "blocks/_intro";
+@import "blocks/_social";
+@import "blocks/_divider";
+@import "blocks/_about";
+@import "blocks/_team";
+@import "blocks/_book";
+@import "blocks/_input";
+@import "blocks/_specialties";
+@import "blocks/_menu";
+@import "blocks/_delicious";
+@import "blocks/_events";
+@import "blocks/_photos";
+@import "blocks/_contact";
+@import "blocks/_footer";

@@ -1,0 +1,165 @@
+.contact {
+  padding: 6.66rem 0;
+  background-color: $white;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    color: $black;
+    font-family: 'Banny', sans-serif;
+    font-size: $font-xl;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    width: 45%;
+    color: $black;
+    font-size: $font-l;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  &__form {
+    margin-top: 3.33rem;
+    width: 100%;
+    display: grid;
+    gap: 0.66rem;
+  }
+
+  &__inputs {
+    display: grid;
+    gap: 0.66rem;
+  }
+
+  &__btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  &__item {
+    padding-left: 1.33rem;
+    position: relative;
+    color: rgba($gray, 0.5);
+    font-size: $font-s;
+    font-weight: 700;
+    transition: $hover;
+        
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+
+    &:hover {
+      color: $gray;
+    }
+
+    &--adress {
+      &::before {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+  
+        pointer-events: none;
+  
+        content: "\f3c5";
+        font-family: "Font Awesome 5 Free";
+        font-size: $i-s;
+        font-weight: 900;
+        color: $primary;
+      }
+    }
+
+    &--tel {
+      &::before {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+  
+        pointer-events: none;
+  
+        content: "\f095";
+        font-family: "Font Awesome 5 Free";
+        font-size: $i-s;
+        font-weight: 900;
+        color: $primary;
+      }
+    }
+
+    &--mail {
+      &::before {
+        display: block;
+        position: absolute;
+        top: 2px;
+        left: 0;
+        z-index: 1;
+  
+        pointer-events: none;
+  
+        content: "\f0e0";
+        font-family: "Font Awesome 5 Free";
+        font-size: $i-s;
+        font-weight: 900;
+        color: $primary;
+      }
+    }
+  }
+}
+
+// Media 
+@include l-tablet {
+  .contact {
+    &__text {
+      width: 80%;
+    }
+
+    &__form {
+      gap: 2rem;
+    }
+
+    &__btns {
+      grid-template-columns: 1fr;
+    }
+
+    &__list {
+      order: 2;
+    }
+  }
+}
+
+@include mobile {
+  .contact {
+    &__text {
+      width: 100%;
+    }
+    
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

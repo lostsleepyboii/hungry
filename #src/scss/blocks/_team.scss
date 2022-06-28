@@ -1,0 +1,93 @@
+.team {
+  padding-bottom: 6.66rem;
+  background-color: $black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__header {
+    padding: 3rem 0;
+    color: $white;
+    font-size: $font-s;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.5em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5.33rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    color: $white;
+    font-family: 'Banny', sans-serif;
+    font-size: $font-xl;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    color: rgba($white, 0.9);
+    font-size: $font-m;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+
+    &--bold {
+      margin-top: 0.66rem;
+      font-weight: 700;
+      font-size: $font-l;
+      line-height: 28px;
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+// LAZY LOAD BANNERS
+.no-webp .team {
+  &.lazy-bg-loaded {
+    background-image: url('../images/ourteam-bg.jpg');
+  }
+}
+
+.webp .team {
+  &.lazy-bg-loaded {
+    background-image: url('../images/ourteam-bg.webp');
+  }
+}
+
+// Media
+@include sm-tablet {
+  .team {
+    &__inner {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+
+    &__content {
+      order: -1;
+    }
+
+    &__img {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Hungry</title>
+    <meta name="description" content="Проект 'Hungry' для портфолио lostsleepyboii.">
+    <meta name="keywords" content="Hungry, lostsleepyboii">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#27211d">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#27211d">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="#" class="logo logo--sm" onclick="disableMenu()">
+            <img src="images/logo.svg" alt="Hungry Logo" width="150" height="150">
+          </a>
+          <div class="burger" onclick="toggleMenu()">
+            <span></span>
+          </div>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#intro" class="nav__link" onclick="disableMenu()">HOME</a>
+              </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__link" onclick="disableMenu()">ABOUT</a>
+              </li>
+              <li class="nav__item">
+                <a href="#team" class="nav__link" onclick="disableMenu()">TEAM</a>
+              </li>
+              <li class="nav__item">
+                <a href="#book" class="nav__link" onclick="disableMenu()">BOOKING</a>
+              </li>
+            </ul>
+            <a href="#" class="logo logo--l" onclick="disableMenu()">
+              <img src="images/logo.svg" alt="Hungry Logo" width="150" height="150">
+            </a>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#menu" class="nav__link" onclick="disableMenu()">MENU</a>
+              </li>
+              <li class="nav__item">
+                <a href="#photos" class="nav__link" onclick="disableMenu()">GALERIE</a>
+              </li>
+              <li class="nav__item">
+                <a href="#events" class="nav__link" onclick="disableMenu()">EVENTS</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__link" onclick="disableMenu()">CONTACT</a>
+              </li>
+            </ul>
+            <div class="nav__social social">
+              <a href="https://github.com/lostsleepyboii" target="_blank" rel="noopener" class="social__link"
+                aria-label="Our Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://github.com/lostsleepyboii" target="_blank" rel="noopener" class="social__link"
+                aria-label="Our Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://github.com/lostsleepyboii" target="_blank" rel="noopener" class="social__link"
+                aria-label="Our Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div> <!-- /.container  -->
+    </header>
+    <section class="intro lazy-bg" id="intro">
+      <div class="container">
+        <div class="intro__inner">
+          <div class="intro__block intro__block--date">
+            <p class="intro__date">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+          </div>
+          <div class="intro__block intro__block--content">
+            <p class="intro__text">RESTAURANT</p>
+            <h1 class="intro__title">hungry people</h1>
+            <span class="divider"></span>
+            <div class="intro__buttons">
+              <a href="#book" class="btn">BOOK TABLE</a>
+              <a href="#about" class="btn btn--trprnt">EXPLORE</a>
+            </div>
+            <a href="#about" class="btn btn--down" aria-label="Go Down">
+              <i class="fas fa-angle-down"></i>
+            </a>
+          </div>
+          <div class="intro__block intro__block--social">
+            <div class="intro__social social">
+              <a href="https://github.com/lostsleepyboii" target="_blank" rel="noopener" class="social__link"
+                aria-label="Our Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://github.com/lostsleepyboii" target="_blank" rel="noopener" class="social__link"
+                aria-label="Our Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://github.com/lostsleepyboii" target="_blank" rel="noopener" class="social__link"
+                aria-label="Our Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__content">
+            <h2 class="about__title">About us</h2>
+            <span class="divider"></span>
+            <p class="about__text about__text--bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+              velit maximus, molestie est a, tempor magna.
+              <p class="about__text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non
+                ultrices ligula. Seddictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem
+                quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+          </div>
+          <picture>
+            <source srcset="/" data-srcset="images/about-img.webp" type="image/webp">
+            <img class="about__img lazy" src="/" data-src="images/about-img.png" alt="About Us" width="600" height="475">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="team lazy-bg" id="team">
+      <div class="container">
+        <div class="team__header">our team</div>
+        <div class="team__inner">
+          <picture>
+            <source srcset="/" data-srcset="images/ourteam-img.webp" type="image/webp">
+            <img class="team__img lazy" src="/" data-src="images/ourteam-img.png" alt="Our Team" width="600" height="475">
+          </picture>
+          <div class="team__content">
+            <h2 class="team__title">MASTER CHEF</h2>
+            <span class="divider"></span>
+            <p class="team__text team__text--bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit
+              maximus, molestie est a, tempor magna.
+              <p class="team__text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non
+                ultrices ligula. Seddictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem
+                quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="book" id="book">
+      <div class="container">
+        <div class="book__inner">
+          <div class="book__content">
+            <h2 class="book__title">book a table</h2>
+            <span class="divider"></span>
+            <form class="book__form">
+              <div class="book__inputs input">
+                <input type="text" autocomplete="name" class="input__item" placeholder="Name">
+                <input type="text" autocomplete="email" class="input__item" placeholder="Email">
+                <input type="text" autocomplete="tel" class="input__item" placeholder="Phone">
+                <div class="input__select">
+                  <select aria-label="choose the number of people">
+                    <option value="1">People</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </div>
+                <input type="text" class="input__item" placeholder="Date (mm/dd)">
+                <div class="input__select">
+                  <select aria-label="Choose time">
+                    <option value="1">Time</option>
+                    <option value="2">1 hour</option>
+                    <option value="3">2 hour</option>
+                    <option value="4">3 hour</option>
+                  </select>
+                </div>
+              </div>
+              <button class="btn btn--large">BOOK NOW</button>
+            </form>
+          </div>
+          <picture>
+            <source srcset="/" data-srcset="images/book-img.webp" type="image/webp">
+            <img class="book__img lazy" src="/" data-src="images/book-img.png" alt="Book a Table" width="600" height="475">
+          </picture>
+        </div>
+        <div class="book__footer">Mon - Fri: <b>8PM - 10PM</b>, Sat - Sun: <b>8PM - 3AM</b>, Phone: <b>+40 729 131 637/+40
+            726 458 782</b></div>
+      </div>
+    </section>
+    <section class="specialties lazy-bg" id="specialties">
+      <div class="container">
+        <div class="specialties__header">specialties</div>
+        <div class="specialties__inner swiper-container">
+          <div class="specialties__list swiper-wrapper">
+            <div class="specialties__item swiper-slide">
+              <picture>
+                <source srcset="/" data-srcset="images/specialties-img.webp" type="image/webp">
+                <img class="specialties__img lazy" src="/" data-src="images/specialties-img.png" alt="Chocolate Pancakes"
+                  width="600" height="475">
+              </picture>
+              <div class="specialties__content">
+                <h2 class="specialties__title">chocolate pancakes</h2>
+                <span class="divider"></span>
+                <p class="specialties__text specialties__text--bold">Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Duis at velit maximus, molestie est a, tempor magna.
+                  <p class="specialties__text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere.
+                    Morbi non ultrices ligula. Seddictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a
+                    sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis
+                    semper laoreet.</p>
+              </div>
+            </div>
+            <div class="specialties__item swiper-slide">
+              <picture>
+                <source srcset="/" data-srcset="images/specialties-img.webp" type="image/webp">
+                <img class="specialties__img lazy" src="/" data-src="images/specialties-img.png" alt="Chocolate Pancakes"
+                  width="600" height="475">
+              </picture>
+              <div class="specialties__content">
+                <h2 class="specialties__title">chocolate pancakes</h2>
+                <span class="divider"></span>
+                <p class="specialties__text specialties__text--bold">Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Duis at velit maximus, molestie est a, tempor magna.
+                  <p class="specialties__text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere.
+                    Morbi non ultrices ligula. Seddictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a
+                    sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis
+                    semper laoreet.</p>
+              </div>
+            </div>
+            <div class="specialties__item swiper-slide">
+              <picture>
+                <source srcset="/" data-srcset="images/specialties-img.webp" type="image/webp">
+                <img class="specialties__img lazy" src="/" data-src="images/specialties-img.png" alt="Chocolate Pancakes"
+                  width="600" height="475">
+              </picture>
+              <div class="specialties__content">
+                <h2 class="specialties__title">chocolate pancakes</h2>
+                <span class="divider"></span>
+                <p class="specialties__text specialties__text--bold">Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Duis at velit maximus, molestie est a, tempor magna.
+                  <p class="specialties__text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere.
+                    Morbi non ultrices ligula. Seddictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a
+                    sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis
+                    semper laoreet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="specialties__btns">
+            <div class="specialties__pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="menu" id="menu">
+      <div class="container">
+        <div class="menu__inner">
+          <h2 class="menu__title">DELICIOUS MENU</h2>
+          <span class="divider"></span>
+          <p class="menu__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie
+            est a, tempor magna.
+            <div class="menu__tabs tab">
+              <button class="tab__item">SOUPE</button>
+              <button class="tab__item">PIZZA</button>
+              <button class="tab__item">PASTA</button>
+              <button class="tab__item">DESERT</button>
+              <button class="tab__item">WINE</button>
+              <button class="tab__item">BEER</button>
+              <button class="tab__item">DRINKS</button>
+            </div>
+            <ul class="menu__list">
+              <li class="menu__delicious delicious">
+                <div class="delicious__item">
+                  <div class="delicious__header">
+                    <h3 class="delicious__name">PIZZA QUATRO STAGIONI . . . . </h3>
+                    <span class="delicious__price">55,68 USD</span>
+                  </div>
+                  <p class="delicious__desc">Integer ullamcorper neque eu purus euismod</p>
+                </div>
+              </li>
+              <li class="menu__delicious delicious">
+                <div class="delicious__item">
+                  <div class="delicious__header">
+                    <h3 class="delicious__name">PIZZA QUATRO STAGIONI . . . . </h3>
+                    <span class="delicious__price">55,68 USD</span>
+                  </div>
+                  <p class="delicious__desc">Integer ullamcorper neque eu purus euismod</p>
+                </div>
+              </li>
+              <li class="menu__delicious delicious">
+                <div class="delicious__item">
+                  <div class="delicious__header">
+                    <h3 class="delicious__name">PIZZA QUATRO STAGIONI . . . . </h3>
+                    <span class="delicious__price">55,68 USD</span>
+                  </div>
+                  <p class="delicious__desc">Integer ullamcorper neque eu purus euismod</p>
+                </div>
+              </li>
+              <li class="menu__delicious delicious">
+                <div class="delicious__item">
+                  <div class="delicious__header">
+                    <h3 class="delicious__name">PIZZA QUATRO STAGIONI . . . . </h3>
+                    <span class="delicious__price">55,68 USD</span>
+                  </div>
+                  <p class="delicious__desc">Integer ullamcorper neque eu purus euismod</p>
+                </div>
+              </li>
+              <li class="menu__delicious delicious">
+                <div class="delicious__item">
+                  <div class="delicious__header">
+                    <h3 class="delicious__name">PIZZA QUATRO STAGIONI . . . . </h3>
+                    <span class="delicious__price">55,68 USD</span>
+                  </div>
+                  <p class="delicious__desc">Integer ullamcorper neque eu purus euismod</p>
+                </div>
+              </li>
+              <li class="menu__delicious delicious">
+                <div class="delicious__item">
+                  <div class="delicious__header">
+                    <h3 class="delicious__name">PIZZA QUATRO STAGIONI . . . . </h3>
+                    <span class="delicious__price">55,68 USD</span>
+                  </div>
+                  <p class="delicious__desc">Integer ullamcorper neque eu purus euismod</p>
+                </div>
+              </li>
+              <li class="menu__delicious delicious">
+                <div class="delicious__item">
+                  <div class="delicious__header">
+                    <h3 class="delicious__name">PIZZA QUATRO STAGIONI . . . . </h3>
+                    <span class="delicious__price">55,68 USD</span>
+                  </div>
+                  <p class="delicious__desc">Integer ullamcorper neque eu purus euismod</p>
+                </div>
+              </li>
+              <li class="menu__delicious delicious">
+                <div class="delicious__item">
+                  <div class="delicious__header">
+                    <h3 class="delicious__name">PIZZA QUATRO STAGIONI . . . . </h3>
+                    <span class="delicious__price">55,68 USD</span>
+                  </div>
+                  <p class="delicious__desc">Integer ullamcorper neque eu purus euismod</p>
+                </div>
+              </li>
+              <li class="menu__delicious delicious">
+                <div class="delicious__item">
+                  <div class="delicious__header">
+                    <h3 class="delicious__name">PIZZA QUATRO STAGIONI . . . . </h3>
+                    <span class="delicious__price">55,68 USD</span>
+                  </div>
+                  <p class="delicious__desc">Integer ullamcorper neque eu purus euismod</p>
+                </div>
+              </li>
+              <li class="menu__delicious delicious">
+                <div class="delicious__item">
+                  <div class="delicious__header">
+                    <h3 class="delicious__name">PIZZA QUATRO STAGIONI . . . . </h3>
+                    <span class="delicious__price">55,68 USD</span>
+                  </div>
+                  <p class="delicious__desc">Integer ullamcorper neque eu purus euismod</p>
+                </div>
+              </li>
+              <li class="menu__delicious delicious">
+                <div class="delicious__item">
+                  <div class="delicious__header">
+                    <h3 class="delicious__name">PIZZA QUATRO STAGIONI . . . . </h3>
+                    <span class="delicious__price">55,68 USD</span>
+                  </div>
+                  <p class="delicious__desc">Integer ullamcorper neque eu purus euismod</p>
+                </div>
+              </li>
+              <li class="menu__delicious delicious">
+                <div class="delicious__item">
+                  <div class="delicious__header">
+                    <h3 class="delicious__name">PIZZA QUATRO STAGIONI . . . . </h3>
+                    <span class="delicious__price">55,68 USD</span>
+                  </div>
+                  <p class="delicious__desc">Integer ullamcorper neque eu purus euismod</p>
+                </div>
+              </li>
+              <li class="menu__delicious delicious">
+                <div class="delicious__item">
+                  <div class="delicious__header">
+                    <h3 class="delicious__name">PIZZA QUATRO STAGIONI . . . . </h3>
+                    <span class="delicious__price">55,68 USD</span>
+                  </div>
+                  <p class="delicious__desc">Integer ullamcorper neque eu purus euismod</p>
+                </div>
+              </li>
+              <li class="menu__delicious delicious">
+                <div class="delicious__item">
+                  <div class="delicious__header">
+                    <h3 class="delicious__name">PIZZA QUATRO STAGIONI . . . . </h3>
+                    <span class="delicious__price">55,68 USD</span>
+                  </div>
+                  <p class="delicious__desc">Integer ullamcorper neque eu purus euismod</p>
+                </div>
+              </li>
+              <li class="menu__delicious delicious">
+                <div class="delicious__item">
+                  <div class="delicious__header">
+                    <h3 class="delicious__name">PIZZA QUATRO STAGIONI . . . . </h3>
+                    <span class="delicious__price">55,68 USD</span>
+                  </div>
+                  <p class="delicious__desc">Integer ullamcorper neque eu purus euismod</p>
+                </div>
+              </li>
+              <li class="menu__delicious delicious">
+                <div class="delicious__item">
+                  <div class="delicious__header">
+                    <h3 class="delicious__name">PIZZA QUATRO STAGIONI . . . . </h3>
+                    <span class="delicious__price">55,68 USD</span>
+                  </div>
+                  <p class="delicious__desc">Integer ullamcorper neque eu purus euismod</p>
+                </div>
+              </li>
+              <li class="menu__delicious delicious">
+                <div class="delicious__item">
+                  <div class="delicious__header">
+                    <h3 class="delicious__name">PIZZA QUATRO STAGIONI . . . . </h3>
+                    <span class="delicious__price">55,68 USD</span>
+                  </div>
+                  <p class="delicious__desc">Integer ullamcorper neque eu purus euismod</p>
+                </div>
+              </li>
+              <li class="menu__delicious delicious">
+                <div class="delicious__item">
+                  <div class="delicious__header">
+                    <h3 class="delicious__name">PIZZA QUATRO STAGIONI . . . . </h3>
+                    <span class="delicious__price">55,68 USD</span>
+                  </div>
+                  <p class="delicious__desc">Integer ullamcorper neque eu purus euismod</p>
+                </div>
+              </li>
+              <li class="menu__delicious delicious">
+                <div class="delicious__item">
+                  <div class="delicious__header">
+                    <h3 class="delicious__name">PIZZA QUATRO STAGIONI . . . . </h3>
+                    <span class="delicious__price">55,68 USD</span>
+                  </div>
+                  <p class="delicious__desc">Integer ullamcorper neque eu purus euismod</p>
+                </div>
+              </li>
+              <li class="menu__delicious delicious">
+                <div class="delicious__item">
+                  <div class="delicious__header">
+                    <h3 class="delicious__name">PIZZA QUATRO STAGIONI . . . . </h3>
+                    <span class="delicious__price">55,68 USD</span>
+                  </div>
+                  <p class="delicious__desc">Integer ullamcorper neque eu purus euismod</p>
+                </div>
+              </li>
+              <li class="menu__delicious delicious">
+                <div class="delicious__item">
+                  <div class="delicious__header">
+                    <h3 class="delicious__name">PIZZA QUATRO STAGIONI . . . . </h3>
+                    <span class="delicious__price">55,68 USD</span>
+                  </div>
+                  <p class="delicious__desc">Integer ullamcorper neque eu purus euismod</p>
+                </div>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </section>
+    <section class="events lazy-bg" id="events">
+      <div class="container">
+        <h2 class="visually-hidden">PRIVATE EVENTS</h2>
+        <div class="events__header">PRIVATE EVENTS</div>
+        <div class="events__inner">
+          <a href="#">
+            <picture>
+              <source srcset="/" data-srcset="images/privateevents-img-1.webp" type="image/webp">
+              <img class="events__img lazy" src="/" data-src="images/privateevents-img-1.png" alt="Private Event 1" width="600"
+                height="475">
+            </picture>
+          </a>
+          <a href="#">
+            <picture>
+              <source srcset="/" data-srcset="images/privateevents-img-2.webp" type="image/webp">
+              <img class="events__img lazy" src="/" data-src="images/privateevents-img-2.png" alt="Private Event 2" width="600"
+                height="475">
+            </picture>
+          </a>
+        </div>
+        <div class="events__footer">For private events please call: <b>+40 729 131 637/+40 726 458 782</b> or use the
+          contact form.</div>
+      </div>
+    </section>
+    <section class="photos" id="photos">
+      <h2 class="visually-hidden">Galerie</h2>
+      <div class="photos__item">
+        <picture>
+          <source srcset="/" data-srcset="images/photo/photo-1.webp" type="image/webp">
+          <img class="photos__img lazy" src="/" data-src="images/photo/photo-1.jpg" alt="Photo 1" width="360" height="360">
+        </picture>
+      </div>
+      <div class="photos__item">
+        <picture>
+          <source srcset="/" data-srcset="images/photo/photo-2.webp" type="image/webp">
+          <img class="photos__img lazy" src="/" data-src="images/photo/photo-2.jpg" alt="Photo 2" width="360" height="360">
+        </picture>
+      </div>
+      <div class="photos__item">
+        <picture>
+          <source srcset="/" data-srcset="images/photo/photo-3.webp" type="image/webp">
+          <img class="photos__img lazy" src="/" data-src="images/photo/photo-3.jpg" alt="Photo 3" width="360" height="360">
+        </picture>
+      </div>
+      <div class="photos__item">
+        <picture>
+          <source srcset="/" data-srcset="images/photo/photo-4.webp" type="image/webp">
+          <img class="photos__img lazy" src="/" data-src="images/photo/photo-4.jpg" alt="Photo 4" width="360" height="360">
+        </picture>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact__inner">
+          <h2 class="contact__title">CONTACT</h2>
+          <span class="divider"></span>
+          <p class="contact__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus,
+            molestie est a, tempor magna.
+            <form class="contact__form">
+              <div class="contact__inputs input">
+                <div class="input__header">
+                  <input type="text" autocomplete="name" class="input__item" placeholder="Name">
+                  <input type="text" autocomplete="email" class="input__item" placeholder="Email">
+                  <input type="text" autocomplete="tel" class="input__item" placeholder="Phone">
+                </div>
+                <textarea class="input__textarea" cols="30" rows="10" placeholder="Message"></textarea>
+              </div>
+              <div class="contact__btns">
+                <div class="contact__list">
+                  <a href="#" class="contact__item contact__item--adress">5th London Boulevard, U.K.</a>
+                  <a href="tel:+40729131637" class="contact__item contact__item--tel">+40 729 131 637/+40 726 458
+                    782</a>
+                  <a href="mailto:office@mindblister.com"
+                    class="contact__item contact__item--mail">office@mindblister.com</a>
+                </div>
+                <button class="btn btn--large">SEND MESSAGE</button>
+              </div>
+            </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <iframe class="footer__map" title="Our Location"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22347.65112118965!2d-122.68303306916194!3d45.56126005759218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a76c8e3412dd%3A0x1d914316c1ef3588!2zTiBTa2lkbW9yZSBTdCwgUG9ydGxhbmQsIE9SIDk3MjE3LCDQodCo0JA!5e0!3m2!1sru!2sru!4v1619288409815!5m2!1sru!2sru"
+        width="1440" height="575" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="footer__copyright">© Design by <b>Mindblister</b> 2019 / Created by <a class="footer__link" href="https://github.com/lostsleepyboii" target="_blank" rel="noopener">lostsleepyboii</a> 2021</div>
+    </footer>
+    <script src="js/app.min.js"></script>
+    <script src="https://kit.fontawesome.com/99a24e0c7e.js" crossorigin="anonymous"></script>
+  </body>
+</html>

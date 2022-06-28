@@ -1,0 +1,29 @@
+.footer {
+  &__map {
+    max-height: 575px;
+    width: 100%;
+  }
+
+  &__copyright {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: break-spaces;
+    color: rgba($white, 0.5);
+    font-size: $font-s;
+    font-weight: 400;
+    background-color: rgba($black, 0.9);
+  }
+
+  &__link {
+    color: rgba($white, 0.5);
+    font-size: $font-s;
+    font-weight: 700;
+    transition: $hover;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
